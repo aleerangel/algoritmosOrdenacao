@@ -33,8 +33,63 @@ int main() {
             //vetor auxiliar para os testes
             int *vetor_teste = (int*) malloc(n * sizeof(int));
 
-            //testes dos algoritmos
+            // 1. Bubble Sort
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "BubbleSort", bubblesort, csv);
 
+            // 2. Bubble Sort (Stop)
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "BubbleSortParada", bubblesort_parada, csv);
+
+            // 3. Selection Direct
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "SelecaoDireta", selecao_direta, csv);
+
+            // 4. Insertion Direct
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "InsercaoDireta", insercao_direta, csv);
+
+            // 5. Insertion Binary
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "InsercaoBinaria", insercao_binaria, csv);
+
+            // 6. Insertion Ternary
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "InsercaoTernaria", insercao_ternaria, csv);
+
+            // 7. Shell Sort
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "ShellSort", shellsort, csv);
+
+            // 8. Heap Sort
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "HeapSort", heapsort, csv);
+
+            // 9. Merge Sort
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "MergeSort", mergesort, csv);
+
+            // 10. Quick Sort (Pivô Fim)
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "QuickSortFim", quicksort_fim, csv);
+
+            // 11. Quick Sort (Pivô Centro)
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "QuickSortCentro", quicksort_centro, csv);
+
+            // 12. Quick Sort (Pivô Mediana)
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "QuickSortMediana", quicksort_mediana, csv);
+
+            // 13. Radix Sort
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "RadixSort", radixsort, csv);
+
+            // 14. Bucket Sort
+            memcpy(vetor_teste, vetor_origem, n * sizeof(int));
+            rodar_teste(vetor_teste, n, tipos[j], "BucketSort", bucketsort, csv);
+
+            printf("--- Fim do lote N=%d Tipo=%s ---\n", n, tipos[j]);
 
 
             free(vetor_teste);
