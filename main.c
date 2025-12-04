@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include "sorts.h"
+#include "utils.h"
 
 int main() {
     int tamanhos[] = {10000, 100000, 500000};
