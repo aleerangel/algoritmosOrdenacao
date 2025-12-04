@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
             if(num < 0) {
                 num = -num; //garante que todos sejam positivos
             }
-            fprintf(f, "%d\n", i);
+            fprintf(f, "%d\n", num);
         }
     }
     else{

@@ -1,6 +1,7 @@
 *.exe
 *.o
 *.out
+*.bin
 
 entrada/
 saida/
