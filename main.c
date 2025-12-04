@@ -24,7 +24,7 @@ int main() {
         //loop dos tipos
         for (int j = 0; j < 3; j++) {
             char caminho[100];
-            sprintf(caminho, "Saida/input_%d_%s.txt", n, tipos[j]);
+            sprintf(caminho, "Entrada/input_%d_%s.txt", n, tipos[j]);
 
             //carrega os dados originais
             int *vetor_origem = ler_arquivo(caminho, n);

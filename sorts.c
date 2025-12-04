@@ -294,7 +294,7 @@ static int obter_maximo_val(int *v, int n, Metricas *m) {
     return max;
 }
 
-static void counting_sort_digit(int *v, int n, int exp, Metricas *m) {
+static void counting_sort_digit(int *v, int n, long long exp, Metricas *m) {
     int *output = (int*) malloc(n * sizeof(int));
     int count[10] = {0};
     for(int i = 0; i < n; i++) {
@@ -317,7 +317,7 @@ static void counting_sort_digit(int *v, int n, int exp, Metricas *m) {
 
 void radixsort(int *v, int n, Metricas *m) {
     int max = obter_maximo_val(v, n, m);
-    for(int exp = 1; max / exp > 0; exp *= 10) {
+    for(long long exp = 1; max / exp > 0; exp *= 10) {
         counting_sort_digit(v, n, exp, m);
     }
 }
