@@ -46,7 +46,7 @@ void insercao_direta(int *v, int n, Metricas *m) {
         while(j >= 0) {
             m->comparacoes++;
             if(v[j] > chave) {
-                m->trocas;
+                m->trocas++;
                 v[j + 1] = v[j];
                 j--;
             } else break;
