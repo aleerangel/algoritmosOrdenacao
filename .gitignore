@@ -2,9 +2,12 @@
 *.o
 *.out
 *.bin
+*.pyc
 
 entrada/
 saida/
+Graficos/
 
+__pycache__/
 .vscode/
 .DS_Store
