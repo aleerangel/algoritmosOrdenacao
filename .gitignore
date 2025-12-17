@@ -3,11 +3,15 @@
 *.out
 *.bin
 *.pyc
+main 
+gera
+trabalho
 
 entrada/
 saida/
-Graficos/
+Gráficos/
 
 __pycache__/
 .vscode/
 .DS_Store
+Thumbs.db
