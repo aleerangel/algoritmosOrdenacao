@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import os 
 
-pasta_saida = 'Gráficos'
+pasta_saida = 'Graficos'
 if not os.path.exists(pasta_saida):
     os.makedirs(pasta_saida)
 
@@ -48,8 +48,8 @@ for n in tamanhos:
 
             plt.tight_layout()
 
-            nome_arquivo = f"{pasta_saida}/{m['nome_arquivo']}_{n}_{t}.png"
-            plt.savefig(nome_arquivo, dpi=300)
+            nome_arquivo = f"{pasta_saida}/{m['nome_arquivo']}_{n}_{t}.pdf"
+            plt.savefig(nome_arquivo)
             plt.close()
 
             print(f"Gerado: {nome_arquivo}")
